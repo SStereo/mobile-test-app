@@ -36,7 +36,7 @@
                                     <ion-label position="floating">Bestand</ion-label>
                                     <ion-input type="number" id="quantity" clear-input="true"></ion-input>
                                 </ion-item>
-                                <div margin-vertical text-right>
+                                <div class="ion-margin-vertical" text-right>
                                     <ion-button fill="solid" id="btn-save" color="primary">
                                         <ion-icon slot="start" name="add"></ion-icon>Speichern
                                     </ion-button>
@@ -47,6 +47,18 @@
                                 
                             </ion-card-content>
                         </ion-card>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        <ion-list id="inventory">
+
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        <p class="ion-margin">Anzahl <span id="numberItems"></span></p>
                     </ion-col>
                 </ion-row>
             </ion-grid>
